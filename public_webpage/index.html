@@ -1,0 +1,289 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <head>
+        <style>
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            .bottom-left {
+                position: absolute;
+                bottom: 8px;
+                left: 16px;
+            }
+
+            .top-left {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+            }
+
+            .top-right {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+            }
+
+            .bottom-right {
+                position: absolute;
+                bottom: 8px;
+                right: 16px;
+            }
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            * {
+                    box-sizing: border-box;
+                }
+
+                .column {
+                    float: center;
+                    width: 50.%;
+                    padding: 15px;
+                }
+            
+
+                 Clearfix (clear floats) 
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+    
+                }
+            
+            
+            div {
+            max-width: 1000px;
+            min-width: 100px;
+            align-content: left;  
+                }
+            
+            p  {
+                font-family: garamond;
+                font-size: 130%;
+                }
+            
+            p.thick {
+                    font-weight: bold;
+                    color: #2541B4  ;
+                    text-align: center}
+            
+/*            <link rel="stylesheet" href="style.css">*/
+            
+            
+        </style>
+        
+        <style type="text/css">a {color: #2541B4  ; text-decoration: none}</style>
+        
+                  
+
+        
+        
+        <title>Phase Space - COVID-19</title>
+    </head>
+    
+      <body>
+    
+    
+    
+        <h1><p class=thick>A relatively simple "phase-space"-like plot for the evolution of COVID-19 cases and deaths</p>   </h1>
+        
+        <h4><p class=thick> <a href="http://ufran.ca" style="text-decoration: none" target="_blank" >Urbano L. França</a></p>   </h4>
+        
+        <h6><p class=thick><a href="https://www.childrenshospital.org/centers-and-services/departments-and-divisions/division-of-critical-care-medicine" style="text-decoration: none" target="_blank" >Boston Children’s Hospital</a> &  <a href="https://hms.harvard.edu/" style="text-decoration: none" target="_blank" >Harvard Medical School</a></p></h6>
+        
+        
+        
+        <br />
+         <h2><p class=thick> Click here to go directly to plots: <a href="#World">World</a> | <a href="#US">US</a></p>   </h2>
+        
+        <br />
+
+<center>
+<img src="Notes_phase_space.jpg" alt="Phase space" style="width:800px" class="rotateimg90">
+</center>
+
+<center><div><p style="text-align:left">  
+
+
+The x-axis shows the mean daily growth over a certain period (14 days) normalized by the maximum daily growth,
+
+        $$x = \frac{(\sum_{14\mathrm{\ days}} \mathrm{daily \ cases})/14 }{\max(\mathrm{daily \ cases}) }.$$ 
+
+The y-axis corresponds to the contribution of the last period (14 days) to the total of cases,
+
+        $$y = \frac{\sum_{14\mathrm{\ days}} \mathrm{daily \ cases}}{\mathrm{Total \ cases} }.$$ 
+        
+<b>Sizes</b> are proportional to the number of cases and also by <b>hovering</b> over the curves. Individual countries/states can be removed from the plot by selecting them on the right-hand side panel.
+            
+        </p></div></center>
+
+
+
+        
+        <br />
+        <br />
+        
+        <h2><p class=thick><a name="World"> World </a></p>   </h2>
+           
+        <!--<h4><p class=thick>World - Top 25 countries in number of cases</p>   </h4>-->
+        
+        <!--    <center><div><p style="text-align:center">Number of Cases<i></i>  </p ></div></center>-->
+          
+        <!--    <center>-->
+     
+        <!--<iframe width="1000" height="600" frameborder="0" src="phase_space_world_confirmed cases.html"></iframe>-->
+        
+        <!--</center>-->
+        
+        
+        
+        <!--<br />-->
+        
+        <!--    <center><div><p style="text-align:center">Deaths<i></i></p ></div></center>-->
+          
+        <!--    <center>-->
+     
+        <!--<iframe width="1000" height="600" frameborder="0" src="phase_space_world_deaths.html"></iframe>-->
+        
+        <!--</center>-->
+           
+           
+
+        <!--    <br />-->
+            
+        <!--    <hr width="50%">-->
+        <!--    <hr width="50%">-->
+            
+        <!--    <br />-->
+
+        <h4><p class=thick> World - Top 21 countries in number of cases</p>   </h4>
+        
+            <center><div><p style="text-align:center">Number of Cases<i></i>  </p ></div></center>
+          
+            <center>
+     
+        <iframe width="1210" height="2450" frameborder="0" src="phase_space_world_several_confirmed cases.html"></iframe>
+        
+        </center>
+        
+        
+        
+        <br />
+        
+            <center><div><p style="text-align:center">Deaths<i></i></p ></div></center>
+          
+            <center>
+     
+        <iframe width="1210" height="2450" frameborder="0" src="phase_space_world_several_deaths.html"></iframe>
+        
+        </center>
+           
+           
+
+            <br />
+            
+            <hr width="50%">
+            <hr width="50%">
+            
+            <br />
+
+        <h2><p class=thick><a name="US"> US States</a></p> </h2>
+
+        <!--<h4><p class=thick>US States - Top 15 states in number of cases</p>   </h4>-->
+        
+
+        <!--    <center><div><p style="text-align:center">Number of Cases<i></i></p ></div></center>-->
+          
+        <!--    <center>-->
+     
+        <!--<iframe width="1000" height="600" frameborder="0" src="phase_space_us_confirmed cases.html"></iframe>-->
+        
+        <!--</center>-->
+        
+        
+        
+        <!--<br />-->
+        
+        <!--    <center><div><p style="text-align:center">Deaths<i></i></p ></div></center>-->
+          
+        <!--    <center>-->
+     
+        <!--<iframe width="1000" height="600" frameborder="0" src="phase_space_us_deaths.html"></iframe>-->
+        
+        <!--</center>-->
+           
+           
+        <!--    <br />-->
+            
+        <!--    <br />-->
+            
+        <!--    <hr width="50%">-->
+        <!--    <hr width="50%">-->
+            
+        <!--    <br />-->
+        <h4><p class=thick> US States</p>   </h4>
+        
+
+            <center><div><p style="text-align:center">Number of Cases<i></i></p ></div></center>
+          
+            <center>
+     
+        <iframe width="1210" height="2450" frameborder="0" src="phase_space_us_several_confirmed cases.html"></iframe>
+        
+        </center>
+        
+        
+        
+        <br />
+        
+            <center><div><p style="text-align:center">Deaths<i></i></p ></div></center>
+          
+            <center>
+     
+        <iframe width="1210" height="2450" frameborder="0" src="phase_space_us_several_deaths.html"></iframe>
+        
+        </center>
+           
+           
+            <br />
+            
+            <br />
+            
+            <hr width="50%">
+            <hr width="50%">
+        
+        
+        
+        
+        
+<!-- Default Statcounter code for Ufran.ca Phase_space_COVID
+http://ufran.ca/phase_space_COVID/ -->
+<script type="text/javascript">
+var sc_project=12246895; 
+var sc_invisible=1; 
+var sc_security="981eecbb"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12246895/0/981eecbb/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+        
+    </body>
+    
